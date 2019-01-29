@@ -1,0 +1,31 @@
+Brian Bowden || 10060818
+November 12, 2018
+CPSC 441 || Tut 04
+================
+-----README-----
+================
+
+Compilation: (makefile provided)
+    make (compile)
+    make clean (remove all compiled files)
+    make run (compile and run program)
+
+Execution
+    ./MVB
+
+NOTE: 
+    if values are changed in the .h file (i.e. the constants) user must "make clean" then "make" for 
+    the changes to take place.
+
+Provided is a spreadsheet complete with graphs and tables documenting the testing I performed.
+"Chart 1" is the graph of Packet Loss Percentage and Average Wait Time in A Fixed Buffer over Varying Out Speed
+"Chart 2" is the Average Delay and Packet Loss in Buffer with Fixed Out Speed over Varying Buffer Size
+
+Also provided is a text file containing some of the raw data collected.
+
+Based on the data collected, the question of varying the buffer size to have the best QoS would imply that
+the larger the buffer, the lower the packet loss (exponentially) and the greater the delay time (linearly). 
+Therefore, it seems most reasonable to pick a buffer size that has a reasonable packet loss and low wait time. 
+Over an 11 Mbps link, it would appear that a larger buffer is the most wise decision, and the point at which
+the graphed lines cross look like the option.
+This value is around 23000.
